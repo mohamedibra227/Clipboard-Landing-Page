@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;600&display=swap');
+:root {
+    --main-font: 'Bai Jamjuree', sans-serif;
+    --BG-IOS: #2bb9a1;
+    --BG-MAC: #5e75ff;
+    --text-color: #c4c8cb;
+    --BG-footer: #f5f6f8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--BG-IOS);
+}
+body {
+  font-size: 18px;
+  font-family: var(--main-font);
+}
+header {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../images/bg-header-desktop.png);
+  background-size: cover;
+}
+.intro {
+  padding: 10px 0;
+  text-align: center;
+  width: 40%;
+}
+.intro h2 {
+  padding: 2px 0;
+}
+.action-btn {
+  padding: 20px 0;
+}
+.action-btn button {
+  padding: 10px 25px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin: 0 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.action-btn .IOS {
+  background-color: var(--BG-IOS);
+  box-shadow: 2px 2px 8px var(--BG-IOS), 2px 2px 8px var(--BG-IOS);
+}
+.action-btn .Mac {
+  background-color: var(--BG-MAC);
+  box-shadow: 2px 2px 8px  var(--BG-MAC), 2px 2px 8px  var(--BG-MAC);
+}
+.one {
+  text-align: center;
+  width: 45%;
+  margin: auto;
+}
+.one h2 {
+  padding: 15px 0;
+}
+.two {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 50px 0;
+}
+.two img {
+  height: 100%;
+  width: 80%;
+}
+.two .features div {
+  margin-top: 40px;
+  width: 65%;
+}
+.three {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.three img {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.three div:first-child {
+  padding: 70px 0;
+  width: 65%;
+  margin: auto;
+}
+.four .functions {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px 0;
+}
+.four .functions div {
+  width: 26%;
+  margin: 0 30px;
+}
+.four .functions div img {
+  margin: 10px 0 20px 0;
+}
+.four .support-companys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  margin: 50px 30px;
+}
+.five {
+  text-align: center;
+  width: 46%;
+  margin: auto;
+}
+footer .foot {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+  background-color: var(--BG-footer);
+}
+.foot .logo {
+  height: 50px;
+  width: 50px;
+  margin: 0 70px;
+}
+.foot ul {
+  list-style: none;
+  max-width: 400px;
+}
+ul li {
+  display: inline-block;
+  margin: 5px 20px;
+}
+.foot .social {
+  display: flex;
+  gap: 15px;
+}
+footer p {
+  text-align: center;
+}
+span {
+  color: var(--text-color);
+}
+@media (max-width: 765px) {
+  header {
+    background: url(../images/bg-header-mobile.png);
+    background-size: cover;
+    padding: 40px 10px;
+  }
+  .intro {
+    width: 100%;
+  }
+  .one {
+    width: 80%;
+  }
+  .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .two .features div {
+    width: 76%;
+    margin: 60px 12px auto;
+    text-align: center;
+  }
+  .three div:first-child {
+    width: 75%;
+  }
+  .four .functions {
+    display: grid;
+  }
+  .four .functions div {
+    width: 85%;
+  }
+  .four .support-companys {
+    display: grid;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+  }
+  .five {
+    width: 84%;
+  }
+  .action-btn button {
+    margin: 10px 0;
+  }
+  footer .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+  ul li {
+    display: grid;
+    margin: 20px 0;
+  }
+}
